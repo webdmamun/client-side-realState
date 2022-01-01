@@ -30,7 +30,7 @@
 - React Bootstrap.
 - Bootstrap.
 
-**Authentication ** 
+**Authentication** 
 - Firebase
 
 **Back-end:** 
