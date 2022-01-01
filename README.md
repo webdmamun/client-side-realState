@@ -17,7 +17,7 @@
 - [@AFreul Joy](https://github.com/afreul-joy)
 - [@Mamun ahmed](https://github.com/webdmamun)
 - [@MahdiHasanDip](https://www.github.com/MahdiHasanDip)
-- [@Fardin Hasan](https://www.github.com/)
+- [@Fardin Hasan](https://github.com/fardin-hasan)
 
 
   
