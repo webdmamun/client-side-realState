@@ -14,7 +14,7 @@ const Login = () => {
                 <input type="text" placeholder='' /><br />
                 <input type="submit" value="Login" />
             </form>
-            <button>Continue with Google</button>
+            <button>Continue with Google </button>
             </div>
 
 
