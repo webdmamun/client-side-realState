@@ -1,11 +1,11 @@
 .banner-text {
-  color: white;
+  color: rgb(20, 20, 20);
   text-transform: uppercase;
   font-weight: 700;
 }
 
 .para {
-  color: white;
+  color: rgb(20, 20, 20);
   text-transform: uppercase;
   font-weight: 400;
 }

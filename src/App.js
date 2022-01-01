@@ -6,7 +6,7 @@ import Registration from "./Pages/Authentication/Registration/Registration";
 import Blogs from "./Pages/Blogs/Blogs";
 import Contact from "./Pages/Contact/Contact";
 import Home from "./Pages/Home/Home";
-import Notfound from "./Pages/Notfound/Notfound";
+import Notfound from "./Pages/NotFound/Notfound";
 import Properties from "./Pages/Properties/Properties";
 import Header from "./Pages/Shared/Header/Header";
 
@@ -22,7 +22,7 @@ function App() {
         <Route path="contact" element={<Contact />}></Route>
         <Route path="login" element={<Login />}></Route>
         <Route path="registration" element={<Registration />}></Route>
-        <Route path="*" element={<Notfound />}></Route>
+        <Route path="*" element={<Notfound/>}></Route>
       </Routes>
     </div>
   );

@@ -9,7 +9,7 @@ const Banner = () => {
   return (
     <div
       id="carouselExampleDark"
-      className="carousel  carousel-dark slide text-white"
+      className="carousel  carousel-dark slide"
       data-bs-ride="carousel"
     >
       <div className="carousel-indicators">
@@ -36,26 +36,26 @@ const Banner = () => {
       </div>
       <div className="carousel-inner ">
         <div
-          className="carousel-item active text-white"
+          className="carousel-item active"
           data-bs-interval="10000"
         >
-          <img src={banner3} className="img-fluid" alt="..." />
+          <img src={banner3} className="img-fluid" style={{ opacity: 0.5}} alt="..." />
           <div className="carousel-caption  text-center ">
             <h2 className="banner-text">WELCOME TO Urban Estate </h2>
             <p className="para">
               “Urban Estate” has been a strong seller of brand Estate.
             </p>
-            <button className="btn btn-warning text-white mx-2 mb-2">
+            <button className="btn btn-success mx-2 mb-2">
               GET STARTED NOW →{" "}
             </button>
-            <button className="btn btn btn-outline-warning text-white ">
+            <button className="btn btn btn-outline-success ">
               {" "}
               LEARN MORE{" "}
             </button>
           </div>
         </div>
         <div className="carousel-item" data-bs-interval="2000">
-          <img src={banner2} className="img-fluid" alt="..." />
+          <img style={{ opacity: 0.5}} src={banner2} className="img-fluid" alt="..." />
           <div className="carousel-caption d-none d-md-block">
             <h2 className="banner-text">FIND YOUR DREAM Land</h2>
             <p className="para">
@@ -63,24 +63,24 @@ const Banner = () => {
               Find the latest homes for sale, property news & real estate market
               data.
             </p>
-            <button className="btn btn-warning text-white mx-3">
+            <button className="btn btn-success mx-3">
               GET STARTED NOW →{" "}
             </button>
-            <button className="btn btn btn-outline-warning text-white ">
+            <button className="btn btn btn-outline-success ">
               {" "}
               LEARN MORE{" "}
             </button>
           </div>
         </div>
         <div className="carousel-item">
-          <img src={banner1} className="img-fluid" alt="..." />
+          <img style={{ opacity: 0.5}} src={banner1} className="img-fluid" alt="..." />
           <div className="carousel-caption d-none d-md-block">
             <h2 className="banner-text">BEST PLACE FOR Buy Property!</h2>
             <p className="para">We are the best seller in the world</p>
-            <button className="btn btn-warning text-white mx-3">
+            <button className="btn btn-success mx-3">
               GET STARTED NOW →{" "}
             </button>
-            <button className="btn btn btn-outline-warning text-white ">
+            <button className="btn btn btn-outline-success ">
               {" "}
               LEARN MORE{" "}
             </button>
