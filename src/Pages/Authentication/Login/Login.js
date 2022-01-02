@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Col, Container, Row } from 'react-bootstrap';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import useFirebase from '../../Hooks/useFirebase';
 import "./Login.css"
@@ -25,28 +26,42 @@ const Login = () => {
 const handleGoogleLogin = () =>{        
     signInWithGoogle(location,navigate)
 };
-console.log(error);
+
     
     return (
-        <div className='login'>
-            <div className="login-card ">
-            <h1>Urban Estate</h1>
-            <h3>Login</h3>
+            <div className="Login"> 
+                <div className="container login-form text-center">
+                    <div className="">
+                        <Row>
+                            <Col xs={12} lg={6} className="left-section">
+                                <h1>Welcome to login</h1>
+                                <h4>Do you need an account?</h4>
+                                <Link to="/registration" ><button className='link-btn'>Sign Up</button></Link>
+                            </Col>
 
-            <form onSubmit={handleLogin}>
-                <input onBlur={handleEmail} type="email"  placeholder='Email'  /><br />
-                <input onBlur={handlePassword} type="password" placeholder='Password' /><br />
-                <input id="submit" type="submit" value="Submit" />
-            </form>
-            <p>{user?.email}</p>
-            <button onClick={handleGoogleLogin}>Continue with Google </button>
-            <button onClick={logOut}>Log Out</button>
-            <br />
-            <Link to="/registration"><button>Registration</button></Link>
+                            <Col className="right-section" xs={12} lg={6}>
+                                <div className=""> 
+                                    <h3><span className='green'>
+                                    Login </span>Here</h3>    
+                                    <hr />                          
+                                        <form className='Form' onClick={handleLogin}>
+                                        <input onBlur={handleEmail} type="email"  placeholder='Email'  />
+                                        <br />
+                                        <input onBlur={handlePassword} type="password" placeholder='Password' />
+                                        <br />
+                                        <input id="submit" type="submit" value="Submit" />
+                                        </form>
+                                    <br />                                    
+                                    <button className='google-login' onClick={handleGoogleLogin}>
+                                    Login with Google
+                                    </button>
+                                    <br /><br /><br />
+                                </div>
+                            </Col>
+                        </Row>
+                    </div>
+                 </div>                              
             </div>
-
-
-        </div>
     );
 };
 

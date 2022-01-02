@@ -1,11 +1,20 @@
 import React from "react";
-import { Container } from "react-bootstrap";
+import { Col, Container, Row } from "react-bootstrap";
+import Email from "./Email"
+import "./Contact.css"
 
 const Contact = () => {
   return (
-    <Container>
-      <h2>This is contact page</h2>
-    </Container>
+    <div className="contact">
+      <div className="">
+        <img className="img-fluid" src="https://i.ibb.co/wKhq82d/6.png" alt="" />
+      </div>
+      <Container>
+        
+            <Email/>
+         
+      </Container>
+      </div>
   );
 };
 
