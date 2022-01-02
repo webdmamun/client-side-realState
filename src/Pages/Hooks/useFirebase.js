@@ -25,9 +25,9 @@ const signInWithGoogle = (location,navigate)=>{
           const credential = GoogleAuthProvider.credentialFromResult(result);
           const token = credential.accessToken;    
           const user = result.user;  
-        //   saveUser(user.email, user.displayName, "PUT")
-        //   const destination = location?.state?.from || '/';
-        //   navigate(destination);
+
+          const destination = location?.state?.from || '/';
+          navigate(destination);
   
   
   
@@ -71,7 +71,7 @@ const registration = (email, password,navigate) =>{
       createUserWithEmailAndPassword(auth, email, password)
     .then((userCredential) => {    
       const user = userCredential.user;
-    //   saveUser(user.email, user.displayName, "POST")
+
       navigate('/');
     })
     
@@ -102,25 +102,7 @@ const registration = (email, password,navigate) =>{
     .finally(() => setIsLoading(true));
   }
   
-// {  // user post to db 
-//   const saveUser = (email,displayName , method)=>{
-//     const user = {email, displayName};
-//     fetch('https://intense-crag-69313.herokuapp.com/users',{
-//                 method: method,
-//                 headers:{
-//                     'content-type': 'application/json'
-//                 },
-//                 body: JSON.stringify(user)              
-                             
-//             })
-//   };}
-  
-//   // load admin 
-//   useEffect(()=>{
-//     fetch(`https://intense-crag-69313.herokuapp.com/users/${user.email}`)
-//     .then(res => res.json())
-//     .then(data => setAdmin(data.admin))
-//   },[user.email])
+
 
 
     return (

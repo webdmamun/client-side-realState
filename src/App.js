@@ -10,14 +10,17 @@ import Properties from "./Pages/Properties/Properties";
 import Footer from "./Pages/Shared/Footer/Footer";
 import Dashboard from "./Pages/Dashboard/Dashboard";
 import Header from "./Pages/Shared/Header/Header";
+import AuthProvider from "./Pages/Context/AuthContext";
+import PrivateRoute from "./Pages/Route/PrivetRoute/PrivetRoute";
 
 function App() {
   return (
     <div className="App">
+      <AuthProvider>
       <Header/>
       <Routes>
         <Route path="/" element={<Home />}></Route>
-        <Route path="blogs" element={<Blogs />}></Route>
+        <Route path="blogs" element={<PrivateRoute><Blogs /></PrivateRoute>}></Route>
         <Route path="properties" element={<Properties />}></Route>
         <Route path="agent" element={<Agent />}></Route>
         <Route path="contact" element={<Contact />}></Route>
@@ -27,6 +30,7 @@ function App() {
         <Route path="*" element={<Notfound />}></Route>
       </Routes>
       <Footer></Footer>
+      </AuthProvider>
     </div>
   );
 }

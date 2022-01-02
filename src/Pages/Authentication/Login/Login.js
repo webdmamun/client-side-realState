@@ -23,7 +23,7 @@ const Login = () => {
     };
 
 const handleGoogleLogin = () =>{        
-    signInWithGoogle()
+    signInWithGoogle(location,navigate)
 };
 console.log(error);
     
