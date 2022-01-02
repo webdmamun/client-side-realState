@@ -19,18 +19,17 @@ const Properties = () => {
           <Col>
             <h2 className="cart-heading-title">
               Find The Right <br />
-              Online Course For You
+              Property For You
             </h2>
             <p>
-              You don't have to struggle alone, you've got our assistance and
-              help.
+              You don't have to struggle, you've got our assistance and help.
             </p>
           </Col>
           <Col className="search-box">
             <InputGroup className="mb-3">
               <FormControl
-                placeholder="What do you want to learn?"
-                aria-label="What do you want to learn?"
+                placeholder="Search the location you want"
+                aria-label="Search the location you want"
                 aria-describedby="basic-addon2"
               />
               <button className="btn btn-secondary">Search</button>

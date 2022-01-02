@@ -17,28 +17,35 @@ const Property = ({ property }) => {
             <div className="d-flex justify-content-between lesson">
               <div>
                 <p>
-                  {" "}
-                  <i className="fas fa-book-reader"></i> {price} Lesson
+                  <i class="fas fa-map-marker-alt"></i> {location}
+                </p>
+              </div>
+              <div></div>
+            </div>
+
+            <h4 className="card-title">
+              <a href="/"> {name}</a>
+            </h4>
+            <p>{des}</p>
+            <div className="d-flex justify-content-between lesson">
+              <div>
+                <p>
+                  <i class="fas fa-home"></i> {space}
                 </p>
               </div>
               <div>
                 <p>
-                  <i className="fa fa-star star-section"></i> {space} ({bed})
+                  <i class="fas fa-bed"></i> {bed}
                 </p>
               </div>
             </div>
-            <h4 className="card-title">
-              <a href="/"> {name}</a>
-            </h4>
-            <h4 className="card-title">
-              <a href="/"> {des}</a>
-            </h4>
-            <div className="text-danger pull-left">${location}</div>
+            <div className="text-danger pull-left">Price: ${price}</div>
             <div className="clearfix"></div>
           </div>
+
           <div className="card-read-more">
             <a href="/" className="btn btn-link btn-block">
-              Add to Cart
+              Details
             </a>
           </div>
         </div>

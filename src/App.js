@@ -1,5 +1,5 @@
 import { Route, Routes } from "react-router-dom";
-import Agent from "./Pages/Agent/Agent";
+import Agent from "./Pages/Agents/Agents";
 import Login from "./Pages/Authentication/Login/Login";
 import Registration from "./Pages/Authentication/Registration/Registration";
 import Blogs from "./Pages/Blogs/Blogs";
@@ -17,19 +17,26 @@ function App() {
   return (
     <div className="App">
       <AuthProvider>
-      <Header/>
-      <Routes>
-        <Route path="/" element={<Home />}></Route>
-        <Route path="blogs" element={<PrivateRoute><Blogs /></PrivateRoute>}></Route>
-        <Route path="properties" element={<Properties />}></Route>
-        <Route path="agent" element={<Agent />}></Route>
-        <Route path="contact" element={<Contact />}></Route>
-        <Route path="dashboard" element={<Dashboard />}></Route>
-        <Route path="login" element={<Login />}></Route>
-        <Route path="registration" element={<Registration />}></Route>
-        <Route path="*" element={<Notfound />}></Route>
-      </Routes>
-      <Footer></Footer>
+        <Header />
+        <Routes>
+          <Route path="/" element={<Home />}></Route>
+          <Route
+            path="blogs"
+            element={
+              <PrivateRoute>
+                <Blogs />
+              </PrivateRoute>
+            }
+          ></Route>
+          <Route path="properties" element={<Properties />}></Route>
+          <Route path="agent" element={<Agent />}></Route>
+          <Route path="contact" element={<Contact />}></Route>
+          <Route path="dashboard" element={<Dashboard />}></Route>
+          <Route path="login" element={<Login />}></Route>
+          <Route path="registration" element={<Registration />}></Route>
+          <Route path="*" element={<Notfound />}></Route>
+        </Routes>
+        <Footer></Footer>
       </AuthProvider>
     </div>
   );
