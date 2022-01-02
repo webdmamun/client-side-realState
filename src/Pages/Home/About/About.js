@@ -4,8 +4,9 @@ import musk from "../../../images/About/musk.jpg";
 const About = () => {
   return (
     <div className="container">
+      <h2 className="text-center py-2 ">About Us </h2>
       <div className="row align-items-center ">
-        <div className="col-12 col-lg-6 col-md-6">
+        <div className="col-12 col-lg-8 col-md-8">
           <h3>
             Best Real
             <br />
@@ -21,8 +22,8 @@ const About = () => {
           <h6>Elon Musk</h6>
           <small>Founder & CEO </small>
         </div>
-        <div className="col-12 col-lg-6 col-md-6">
-          <img src={musk} className="img-fluid" alt="" />
+        <div className="col-12 col-lg-4 col-md-4">
+          <img src={musk} className="img-fluid rounded-circle" style={{width:"450px"}} alt="" />
         </div>
       </div>
     </div>
