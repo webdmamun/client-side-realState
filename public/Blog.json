@@ -1,0 +1,37 @@
+[
+    {
+      "id": 1,
+      "img": "https://i.ibb.co/bPt5f5y/blog-1.jpg",
+      "name": "Victorian real estate: homes with the best views of nature",
+      "details": "These remarkable homes allow their occupants to be at one with nature, putting mountains, rolling hills, gorgeous gardens, waterfalls, bushland and even a volcanic crater on show.",
+      "author": "Samantha",
+      "publishedTime": "2 Jan 2022"
+    },
+    {
+      "id": 2,
+      "img": "https://i.ibb.co/hXvqDQ2/blog.jpg",
+      "name": "The 10 most wanted homes of 2021: $3m garage, security at auction, tennis stars",
+      "details": "A mansion with a $3 million garage, an acreage estate that needed security at its auction and a hidden hinterland retreat that was one of the biggest sales of the year.",
+      "author": "Angelica",
+      "publishedTime": "3 Dec 2021"
+    },
+    {
+      "id": 3,
+      "img": "https://i.ibb.co/BKr2crm/blog-2.jpg",
+      "name": "Man from Snowy River producer Geoff Burrowes sells Mt Skene Estate",
+      "details": "Rockpool Rainbow Bay – Adsett’s planned luxury apartment project in Coolangatta – has clocked $50m in unconditional sales and more than 2,000 inquiries since launching to market in March.",
+      "author": "Katrina Kaif",
+      "publishedTime": "1 June 2020"
+    },
+    {
+      "id": 4,
+      "img": "https://i.ibb.co/9c6Sns8/blog-3.jpg",
+      "name": "Star architect Joe Adsett making inroads on the Coast",
+      "details": "The spectacular six-bedroom mansion on 1ha of land attracted 12 registered bidders after a campaign that saw 700 people pass through its doors.",
+      "author": "Jerin Roy",
+      "publishedTime": "2 Mar 2022"
+    }
+  ]
+  
+  
+  
