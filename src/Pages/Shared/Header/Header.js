@@ -1,6 +1,7 @@
 import React from "react";
 import { Container, Nav, Navbar } from "react-bootstrap";
 import { Link } from "react-router-dom";
+import logo from "../../../images/logo.png";
 import "./Header.css";
 
 const Header = () => {
@@ -10,7 +11,7 @@ const Header = () => {
         <Container>
           <Navbar.Brand>
             <Link className="nav-link" to="/">
-              Urban Estate
+              <img className="rounded" src={logo} alt="" />
             </Link>
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
@@ -30,12 +31,21 @@ const Header = () => {
               </Nav.Link>
             </Nav>
             <Nav>
+<<<<<<< HEAD
              
               <Nav.Link className="text-light" href="">Welcome <span className="text-info">example@ gmail.com</span> </Nav.Link>
               <Nav.Link as={Link} to="/login"><button className="btn btn-success"  >Log In</button></Nav.Link>
               <Nav.Link eventKey={2} >
                 <button className="btn btn-danger" >Log out</button>
+=======
+              <Nav.Link as={Link} to="/login">
+                Log in
+>>>>>>> da02f7cf47f2ec705cc9e95191b289681e0eae65
               </Nav.Link>
+              <Nav.Link as={Link} to="/dashboard">
+                Dashboard
+              </Nav.Link>
+              <button className="btn btn-danger">Log Out</button>
             </Nav>
           </Navbar.Collapse>
         </Container>
