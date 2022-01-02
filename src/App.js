@@ -9,6 +9,7 @@ import Notfound from "./Pages/Notfound/Notfound";
 import Properties from "./Pages/Properties/Properties";
 import Footer from "./Pages/Shared/Footer/Footer";
 import Header from "./Pages/Shared/Header/Header";
+import Dashboard from "./Pages/Dashboard/Dashboard";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
         <Route path="properties" element={<Properties />}></Route>
         <Route path="agent" element={<Agent />}></Route>
         <Route path="contact" element={<Contact />}></Route>
+        <Route path="dashboard" element={<Dashboard />}></Route>
         <Route path="login" element={<Login />}></Route>
         <Route path="registration" element={<Registration />}></Route>
         <Route path="*" element={<Notfound />}></Route>

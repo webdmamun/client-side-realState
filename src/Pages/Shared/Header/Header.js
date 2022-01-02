@@ -1,6 +1,7 @@
 import React from "react";
 import { Container, Nav, Navbar } from "react-bootstrap";
 import { Link } from "react-router-dom";
+import logo from "../../../images/logo.png";
 import "./Header.css";
 
 const Header = () => {
@@ -10,7 +11,7 @@ const Header = () => {
         <Container>
           <Navbar.Brand>
             <Link className="nav-link" to="/">
-              Urban Estate
+              <img className="rounded" src={logo} alt="" />
             </Link>
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
@@ -33,6 +34,10 @@ const Header = () => {
               <Nav.Link as={Link} to="/login">
                 Log in
               </Nav.Link>
+              <Nav.Link as={Link} to="/dashboard">
+                Dashboard
+              </Nav.Link>
+              <button className="btn btn-danger">Log Out</button>
             </Nav>
           </Navbar.Collapse>
         </Container>
