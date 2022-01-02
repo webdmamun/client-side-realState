@@ -1,15 +1,16 @@
-import React from 'react';
-import Header from '../Shared/Header/Header';
-import About from './About/About';
-import Banner from './Banner/Banner';
+import React from "react";
+import About from "./About/About";
+import Banner from "./Banner/Banner";
+import Neighborhoods from "./FeaturedNeighborhoods/Neighborhoods";
 
 const Home = () => {
-    return (
-        <div>            
-            <Banner></Banner>
-            <About></About>
-        </div>
-    );
+  return (
+    <div>
+      <Banner></Banner>
+      <About></About>
+      <Neighborhoods></Neighborhoods>
+    </div>
+  );
 };
 
 export default Home;
