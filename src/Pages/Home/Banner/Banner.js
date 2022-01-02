@@ -1,8 +1,4 @@
 import React from "react";
-import banner1 from "../../../images/Banner/banner (1).jpg";
-import banner2 from "../../../images/Banner/banner (2).jpg";
-import banner3 from "../../../images/Banner/banner (3).jpg";
-
 import "./Banner.css";
 
 const Banner = () => {
@@ -35,11 +31,13 @@ const Banner = () => {
         ></button>
       </div>
       <div className="carousel-inner ">
-        <div
-          className="carousel-item active"
-          data-bs-interval="10000"
-        >
-          <img src="https://i.ibb.co/mqPrGZ3/4.png" className="img-fluid" style={{ opacity: 0.5}} alt="..." />
+        <div className="carousel-item active" data-bs-interval="10000">
+          <img
+            src="https://i.ibb.co/mqPrGZ3/4.png"
+            className="img-fluid"
+            style={{ opacity: 0.5 }}
+            alt="..."
+          />
           <div className="carousel-caption  text-center ">
             <h2 className="banner-text">WELCOME TO Urban Estate </h2>
             <p className="para">
@@ -55,7 +53,12 @@ const Banner = () => {
           </div>
         </div>
         <div className="carousel-item" data-bs-interval="2000">
-          <img style={{ opacity: 0.5}} src="https://i.ibb.co/ygKBdY0/1.png" className="img-fluid" alt="..." />
+          <img
+            style={{ opacity: 0.5 }}
+            src="https://i.ibb.co/ygKBdY0/1.png"
+            className="img-fluid"
+            alt="..."
+          />
           <div className="carousel-caption d-none d-md-block">
             <h2 className="banner-text">FIND YOUR DREAM Land</h2>
             <p className="para">
@@ -63,9 +66,7 @@ const Banner = () => {
               Find the latest homes for sale, property news & real estate market
               data.
             </p>
-            <button className="btn btn-success mx-3">
-              GET STARTED NOW →{" "}
-            </button>
+            <button className="btn btn-success mx-3">GET STARTED NOW → </button>
             <button className="btn btn btn-outline-success ">
               {" "}
               LEARN MORE{" "}
@@ -73,13 +74,16 @@ const Banner = () => {
           </div>
         </div>
         <div className="carousel-item">
-          <img style={{ opacity: 0.5}} src="https://i.ibb.co/bHt5dFj/3.png" className="img-fluid" alt="..." />
+          <img
+            style={{ opacity: 0.5 }}
+            src="https://i.ibb.co/bHt5dFj/3.png"
+            className="img-fluid"
+            alt="..."
+          />
           <div className="carousel-caption d-none d-md-block">
             <h2 className="banner-text">BEST PLACE FOR Buy Property!</h2>
             <p className="para">We are the best seller in the world</p>
-            <button className="btn btn-success mx-3">
-              GET STARTED NOW →{" "}
-            </button>
+            <button className="btn btn-success mx-3">GET STARTED NOW → </button>
             <button className="btn btn btn-outline-success ">
               {" "}
               LEARN MORE{" "}
