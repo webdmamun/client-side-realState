@@ -1,7 +1,7 @@
 const Agents = [
     {
         id:1,
-        img:"https://ibb.co/CMzt4D8",
+        img:"https://i.ibb.co/RB9Stdb/3.png",
         name:"Agent 1",
         location: "Dhaka",
         Phone:"01677777770",
@@ -10,7 +10,7 @@ const Agents = [
     },  
     {
         id:2,
-        img:"https://ibb.co/0qq5s3b",
+        img:"https://i.ibb.co/wyytc1m/2.png",
         name:"Agent 2",
         location: "Dhaka",
         Phone:"01677777770",
@@ -19,7 +19,7 @@ const Agents = [
     },  
     {
         id:3,
-        img:"https://ibb.co/19S42wt",
+        img:"https://i.ibb.co/CnrS0T3/1.png",
         name:"Agent 3",
         location: "Dhaka",
         Phone:"01677777770",
