@@ -1,11 +1,4 @@
 import React from "react";
-<<<<<<< HEAD
-// import banner1 from "../../../images/Banner/banner (1).jpg";
-// import banner2 from "../../../images/Banner/banner (2).jpg";
-// import banner3 from "../../../images/Banner/banner (3).jpg";
-
-=======
->>>>>>> b9920792ed5310d5bfa3fe1959606356e1025877
 import "./Banner.css";
 
 const Banner = () => {
