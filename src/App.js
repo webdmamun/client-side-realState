@@ -11,14 +11,14 @@ import Footer from "./Pages/Shared/Footer/Footer";
 import Header from "./Pages/Shared/Header/Header";
 import AuthProvider from "./Pages/Context/AuthContext";
 import PrivateRoute from "./Pages/Route/PrivetRoute/PrivetRoute";
-import Dashboard from './Pages/Dashboard/Dashboard/Dashboard';
-import DashBoardHome from './Pages/Dashboard/DashBoardHome/DashBoardHome';
-import Admin from './Pages/Dashboard/Admin/Admin';
-import AddService from './Pages/Dashboard/AddServices/AddProperties';
-import DeleteService from './Pages/Dashboard/DeleteProperties/DeleteProperties';
+import Dashboard from "./Pages/Dashboard/Dashboard/Dashboard";
+import DashBoardHome from "./Pages/Dashboard/DashBoardHome/DashBoardHome";
+import Admin from "./Pages/Dashboard/Admin/Admin";
+import AddService from "./Pages/Dashboard/AddServices/AddProperties";
+import DeleteService from "./Pages/Dashboard/DeleteProperties/DeleteProperties";
 import DeleteAgent from "./Pages/Dashboard/DeleteAgent/DeleteAgent";
 import AddAgent from "./Pages/Dashboard/AddAgent/AddAgent";
-
+import PropertyDetails from "./Pages/Properties/PropertyDetails/PropertyDetails";
 
 function App() {
   return (
@@ -27,27 +27,37 @@ function App() {
         <Header />
         <Routes>
           <Route path="/" element={<Home />}></Route>
-          <Route path="blogs" element={<PrivateRoute> <Blogs /></PrivateRoute>}
+          <Route
+            path="blogs"
+            element={
+              <PrivateRoute>
+                {" "}
+                <Blogs />
+              </PrivateRoute>
+            }
           ></Route>
           <Route path="properties" element={<Properties />}></Route>
+          <Route path="details/:_id" element={<PropertyDetails />}></Route>
           <Route path="agent" element={<Agent />}></Route>
           <Route path="contact" element={<Contact />}></Route>
 
-          
-          <Route path="/dashboard" element={<PrivateRoute>
-          <Dashboard/>
-        </PrivateRoute>}>
-          
-            <Route path="/dashboard" element={<DashBoardHome />}/>
+          <Route
+            path="/dashboard"
+            element={
+              <PrivateRoute>
+                <Dashboard />
+              </PrivateRoute>
+            }
+          >
+            <Route path="/dashboard" element={<DashBoardHome />} />
             <Route path="/dashboard/Admin" element={<Admin />} />
-            <Route path="/dashboard/addProperties" element={<AddService/>} />
-            <Route path="/dashboard/addAgent" element={<AddAgent/>} />
-            <Route path="/dashboard/delete" element={<DeleteService/>} />   
-            <Route path="/dashboard/deleteAgent" element={<DeleteAgent/>} />   
-        </Route>
+            <Route path="/dashboard/addProperties" element={<AddService />} />
+            <Route path="/dashboard/addAgent" element={<AddAgent />} />
+            <Route path="/dashboard/delete" element={<DeleteService />} />
+            <Route path="/dashboard/deleteAgent" element={<DeleteAgent />} />
+          </Route>
           <Route path="login" element={<Login />}></Route>
           <Route path="registration" element={<Registration />}></Route>
-
 
           <Route path="login" element={<Login />}></Route>
           <Route path="registration" element={<Registration />}></Route>
