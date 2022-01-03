@@ -8,7 +8,6 @@ import Home from "./Pages/Home/Home";
 import Notfound from "./Pages/Notfound/Notfound";
 import Properties from "./Pages/Properties/Properties";
 import Footer from "./Pages/Shared/Footer/Footer";
-
 import Header from "./Pages/Shared/Header/Header";
 import AuthProvider from "./Pages/Context/AuthContext";
 import PrivateRoute from "./Pages/Route/PrivetRoute/PrivetRoute";
@@ -33,6 +32,7 @@ function App() {
           <Route path="properties" element={<Properties />}></Route>
           <Route path="agent" element={<Agent />}></Route>
           <Route path="contact" element={<Contact />}></Route>
+
           
           <Route path="/dashboard" element={<PrivateRoute>
           <Dashboard/>
@@ -45,6 +45,10 @@ function App() {
             <Route path="/dashboard/delete" element={<DeleteService/>} />   
             <Route path="/dashboard/deleteAgent" element={<DeleteAgent/>} />   
         </Route>
+          <Route path="login" element={<Login />}></Route>
+          <Route path="registration" element={<Registration />}></Route>
+
+
           <Route path="login" element={<Login />}></Route>
           <Route path="registration" element={<Registration />}></Route>
 
