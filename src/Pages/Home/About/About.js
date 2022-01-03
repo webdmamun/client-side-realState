@@ -1,31 +1,38 @@
 import React from "react";
-import women from "../../../images/About/women.jpg";
+import { Container, Row } from "react-bootstrap";
+import { Col } from "react-bootstrap";
 
 const About = () => {
   return (
-    <div className="container">
-      <h2 className="text-center py-2 ">About Us </h2>
-      <div className="row align-items-center ">
-        <div className="col-12 col-lg-8 col-md-8">
-          <h3>
-            Best Real
-            <br />
-            Estate Services
-          </h3>
-          <p>
-            With over $2 Billion in sales, Zara is the industry’s top
-            luxury producer with over 7 years of experience in marketing Zara’s
-            most prestigious properties. Due to her unparalleled results,
-            expertise and dedication, Zara ranks amongst the Top 6 agents in
-            Boston.
-          </p>
-          <h6>Zara Seikh</h6>
-          <small>Founder & CEO </small>
-        </div>
-        <div className="col-12 col-lg-4 col-md-4">
-          <img src={women} className="img-fluid " alt="" />
-        </div>
-      </div>
+    <div>
+      <Container className="">
+        <Row>
+          <Col>
+            <h1 className="text-center destination-heading py-5">About Us</h1>
+            <p>
+              <strong>
+                A Tradition of Excellence, Integrity, Knowledge and Service for
+                over 60 years.
+              </strong>
+              <br />
+              At Estey Real Estate, you are number one. Whether you are a
+              property owner, tenant, or buyer, we value your business and will
+              provide you with the individual attention and service you deserve.
+              We believe in a strict Code of Ethics. We believe in integrity,
+              commitment to excellence, a professional attitude, and
+              personalized care.
+            </p>
+          </Col>
+          <Col>
+            <img
+              className="rounded mt-5"
+              src="https://pediaa.com/wp-content/uploads/2020/08/Difference-Between-Property-and-Real-Estate_1-1024x660.jpg"
+              width="500px"
+              alt=""
+            />
+          </Col>
+        </Row>
+      </Container>
     </div>
   );
 };
