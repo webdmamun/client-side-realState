@@ -4,7 +4,7 @@ import "./Property.css";
 import { useNavigate } from "react-router-dom";
 
 const Property = ({ property }) => {
-  const { img, name, price, location, bed, space } = property || {};
+  const { img, name, price, location, bed, space, _id } = property || {};
   const naviagate = useNavigate();
 
   //Handle Details button
@@ -53,8 +53,8 @@ const Property = ({ property }) => {
 
           <div className="card-read-more">
             <button
-              onClick={handleDetailsButton}
-              className="btn btn-primary btn-block"
+              onClick={() => handleDetailsButton(_id)}
+              className="btn btn-link btn-block text-decoration-none"
             >
               Details
             </button>

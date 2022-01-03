@@ -4,16 +4,28 @@ import { Container } from "react-bootstrap";
 
 const PropertyDetails = () => {
   const { _id } = useParams();
-  const [detail, setDetail] = useState([]);
+  const [details, setDetails] = useState({});
   useEffect(() => {
     fetch(`https://young-anchorage-08482.herokuapp.com/property/${_id}`)
       .then((res) => res.json())
-      .then((json) => setDetail(json));
+      .then((json) => setDetails(json));
   }, [_id]);
   return (
-    <Container>
-      <h2>This is product details id is: {detail._id} </h2>
-    </Container>
+    <>
+      <Container>
+        <div className="profile-card">
+          <div>
+            <img className="rounded" src={details.img} alt="" />
+            <h3>{details.name}</h3>
+            <p>Price: {details.price}</p>
+            <p>Location: {details.location}</p>
+            <p>Description: {details.des}</p>
+            <p>Bed: {details.bed}</p>
+            <p>Space: {details.space}</p>
+          </div>
+        </div>
+      </Container>
+    </>
   );
 };
 
