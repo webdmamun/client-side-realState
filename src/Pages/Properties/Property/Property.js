@@ -17,7 +17,7 @@ const Property = ({ property }) => {
     <>
       {/* single cart  */}
 
-      <div className="col-xs-12 col-sm-4 col-md-3">
+      <div className="col-xs-12 col-sm-4 col-md-4">
         <div className="card">
           <img className="img-card" src={img} alt="" />
 

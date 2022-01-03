@@ -6,7 +6,7 @@ import useFirebase from "../../Hooks/useFirebase";
 import "./Header.css";
 
 const Header = () => {
-  const {user,logOut}= useFirebase();
+  const {user,logOut,admin}= useFirebase();
   return (
     <>
     <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
@@ -33,9 +33,9 @@ const Header = () => {
             </Nav.Link>
           </Nav>
           <Nav>
-            <Nav.Link as={Link} to="/dashboard">
+            {admin&&<Nav.Link as={Link} to="/dashboard">
               Dashboard
-            </Nav.Link>
+            </Nav.Link>}
           {user.email?
             <button onClick={logOut} className="btn btn-danger">Log Out</button>
            : <Nav.Link as={Link} to="/login">

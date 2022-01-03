@@ -18,7 +18,7 @@ import AddService from "./Pages/Dashboard/AddServices/AddProperties";
 import DeleteService from "./Pages/Dashboard/DeleteProperties/DeleteProperties";
 import DeleteAgent from "./Pages/Dashboard/DeleteAgent/DeleteAgent";
 import AddAgent from "./Pages/Dashboard/AddAgent/AddAgent";
-import PropertyDetails from "./Pages/Properties/PropertyDetails/PropertyDetails";
+import AdminRoute from "./Pages/Route/AminRoute/AdminRoute";
 
 function App() {
   return (
@@ -37,16 +37,15 @@ function App() {
             }
           ></Route>
           <Route path="properties" element={<Properties />}></Route>
-          <Route path="details/:_id" element={<PropertyDetails />}></Route>
           <Route path="agent" element={<Agent />}></Route>
           <Route path="contact" element={<Contact />}></Route>
 
           <Route
             path="/dashboard"
             element={
-              <PrivateRoute>
+              <AdminRoute>
                 <Dashboard />
-              </PrivateRoute>
+              </AdminRoute>
             }
           >
             <Route path="/dashboard" element={<DashBoardHome />} />
