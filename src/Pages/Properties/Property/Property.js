@@ -1,18 +1,26 @@
 /* eslint-disable jsx-a11y/img-redundant-alt */
 import React from "react";
 import "./Property.css";
+import { useNavigate } from "react-router-dom";
 
 const Property = ({ property }) => {
-  const { img, name, price, location, des, bed, space } = property || {};
+  const { img, name, price, location, bed, space } = property || {};
+  const naviagate = useNavigate();
+
+  //Handle Details button
+  const handleDetailsButton = (_id) => {
+    const uri = `/details/${_id}`;
+    naviagate(uri);
+  };
+
   return (
     <>
       {/* single cart  */}
 
       <div className="col-xs-12 col-sm-4 col-md-4">
         <div className="card">
-          <a className="img-card" href="/">
-            <img src={img} alt="" />
-          </a>
+          <img className="img-card" src={img} alt="" />
+
           <div className="card-content">
             <div className="d-flex justify-content-between lesson">
               <div>
@@ -26,7 +34,7 @@ const Property = ({ property }) => {
             <h4 className="card-title">
               <a href="/"> {name}</a>
             </h4>
-            <p>{des}</p>
+
             <div className="d-flex justify-content-between lesson">
               <div>
                 <p>
@@ -44,9 +52,12 @@ const Property = ({ property }) => {
           </div>
 
           <div className="card-read-more">
-            <a href="/" className="btn btn-link btn-block">
+            <button
+              onClick={handleDetailsButton}
+              className="btn btn-primary btn-block"
+            >
               Details
-            </a>
+            </button>
           </div>
         </div>
       </div>
