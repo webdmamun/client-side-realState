@@ -55,7 +55,7 @@ const Admin = () => {
     return (
         <div className='mt-5'>
              <div>
-            <h1>Make An Admin Here</h1>
+            <h1>Make An Admin Here</h1> <hr />
             <form onSubmit={handleSubmit} >
             <input className="input-field" onChange={handleEmail} type="Email" placeholder="Email" />
             

@@ -34,18 +34,19 @@ const AddProperties = () => {
       }
     return (
         <div className="">
+          <h1>Add Property Here</h1> <hr />
             <form onSubmit={handleSubmit(onSubmit)}>
                 <div className="input-box">
                 <input {...register("name", { required: true, maxLength: 20 })} placeholder="Name"/>
                 <br />
                 <input {...register("des")} placeholder="Description"/><br />
                 <input {...register("bed")} placeholder="Bed Quantity"/><br />
-                <input {...register("location")} placeholder="location"/><br />
+                <input {...register("location")} placeholder="Location"/><br />
                 <input {...register("img")} placeholder="Image link" /><br />
-                <input {...register("space")} placeholder="Space" /><br />
-                <input {...register("price")} placeholder="price: example 100$" />
+                <input {...register("space")} placeholder="Space: Example: 250 Sq.ft." /><br />
+                <input {...register("price")} placeholder="Price: example 100$" />
                 <br /><br />
-                <input className="submit-btn" type="submit" />
+                <input className="submit-btn" type="submit"  value="Submit"/>
                 </div>
             </form>
         </div>
