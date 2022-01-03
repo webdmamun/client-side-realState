@@ -1,43 +1,56 @@
 import React from "react";
 import "./Footer.css";
+import { Col, Container, Row } from "react-bootstrap";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
-  return (
+  return (<>
+
     <div className="footer-div">
       <div className="footer container pt-5">
         <div className="row">
           <div className="col-3">
             <h4>
-              <u>About Us</u>
+              <h4>About Us</h4> <hr />
             </h4>
-            <p>
-              We are committed to providing the most personalized real estate
-              services from listing to close. We have exceptional results which
+            <p className="footer-text">
+              We are committed to providing the most personalized real estate services from listing to close. We have exceptional results which
               are confirmed by the number of clients we serve.
             </p>
           </div>
           <div className="col-3">
             <h4>
-              <u>Company</u>
+              Company <hr />
             </h4>
-            <h6>About</h6>
-            <h6>Site Map</h6>
-            <h6>Support Center</h6>
-            <h6>Terms Conditions</h6>
+            <ul>
+              <li>About</li>
+              <li>Site Map</li>
+              <li>Support Center</li>
+              <li>Terms Conditions</li>
+            </ul>            
           </div>
 
           <div className="col-3">
             <h4>
-              <u>Quick links</u>
+              Quick links <hr />
             </h4>
-            <h6>Rental</h6>
-            <h6>Sales</h6>
-            <h6>Contact</h6>
-            <h6>Our Blog</h6>
+            <ul>
+            <li>
+                <Link style={{paddingLeft: 13, textDecoration: 'none', color: "whitesmoke"}} to="/contact"> Home
+                  </Link>
+                  </li>
+            
+              <li> <Link style={{paddingLeft: 13, textDecoration: 'none', color: "whitesmoke"}} to="/properties">Properties
+                  </Link></li>
+              <li> <Link style={{paddingLeft: 13, textDecoration: 'none', color: "whitesmoke"}} to="/properties">Contact
+                  </Link></li>
+              <li><Link style={{paddingLeft: 13, textDecoration: 'none', color: "whitesmoke"}} to="/blogs">Our Blog
+                  </Link></li>
+            </ul>
           </div>
 
           <div className="col-3">
-            <h2>Urban State</h2>
+            <h4>Urban State</h4> <hr />
             <h6>
               <i class="fas fa-map-marker-alt footer-icon"></i> 25 Union St,
               Boston, MA 02113
@@ -69,8 +82,10 @@ const Footer = () => {
           <i className="fab fa-linkedin footer-icon"></i>
         </a>
       </div>
+      <hr />
       <h6 className="text-center">&copy; Copyright Reserved</h6>
     </div>
+    </>
   );
 };
 

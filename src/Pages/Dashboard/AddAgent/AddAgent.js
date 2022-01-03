@@ -34,20 +34,20 @@ const AddAgent = () => {
       }
     return (
         <div className="">
-            <h1>Add agent here</h1>
+            <h1>Add Agent Here</h1> <hr />
             <form onSubmit={handleSubmit(onSubmit)}>
                 <div className="input-box">
-                <input {...register("name", { required: true, maxLength: 20 })} placeholder="Name"/>
+                <input {...register("name", { required: true, maxLength: 20 })} placeholder="Full Name"/>
                 <br />
 
-                <input {...register("location")} placeholder="location"/><br />
-                <input {...register("img")} placeholder="Image link" /><br />
+                <input {...register("location")} placeholder="Location"/><br />
+                <input {...register("img")} placeholder="Image Link" /><br />
 
-                <input {...register("phone")} placeholder="phone" />
+                <input {...register("phone")} placeholder="Phone Number" />
                 <br />
-                <input {...register("mail")} placeholder="mail" />
+                <input {...register("mail")} placeholder="E-mail" />
                 <br />
-                <input className="submit-btn" type="submit" />
+                <input className="submit-btn" type="submit"  value="Submit"/>
                 </div>
             </form>
         </div>

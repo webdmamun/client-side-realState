@@ -6,6 +6,7 @@ const Partner = () => {
   return (
     <div>
       <Container className="px-5 py-5 partner-section">
+   
         <h1>Trusted by World's Best Companies</h1>
         <div className="d-flex justify-content-center py-3">
           <img
