@@ -5,9 +5,9 @@ const Blog = ({ blog }) => {
     const { img,name,details,author,personImg,comments,day} = blog|| {};
     console.log(name);
     return (
-          <>
+          <div className="mt-5">
           <div class="bg"></div>
-          <div class="card">    
+          <div class="card mt-3">    
             <div class="top">
               <img src={img} alt="" />
             </div>
@@ -29,7 +29,7 @@ const Blog = ({ blog }) => {
               </div>
             </div>
           </div>
-          </>
+          </div>
     );
 };
 
