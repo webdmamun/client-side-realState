@@ -8,14 +8,9 @@ import Home from "./Pages/Home/Home";
 import Notfound from "./Pages/Notfound/Notfound";
 import Properties from "./Pages/Properties/Properties";
 import Footer from "./Pages/Shared/Footer/Footer";
-import Dashboard from "./Pages/Dashboard/Dashboard";
 import Header from "./Pages/Shared/Header/Header";
 import AuthProvider from "./Pages/Context/AuthContext";
 import PrivateRoute from "./Pages/Route/PrivetRoute/PrivetRoute";
-import Pay from "./Pages/Dashboard/Pay/Pay";
-import GiveReview from "./Pages/Dashboard/GiveReview/GiveReview";
-import ManageProperty from "./Pages/Dashboard/ManageProperty/ManageProperty";
-import ManageAgents from "./Pages/Dashboard/ManageAgents/ManageAgents";
 
 function App() {
   return (
@@ -35,13 +30,8 @@ function App() {
           <Route path="properties" element={<Properties />}></Route>
           <Route path="agent" element={<Agent />}></Route>
           <Route path="contact" element={<Contact />}></Route>
-          <Route path="dashboard" element={<Dashboard />}></Route>
           <Route path="login" element={<Login />}></Route>
           <Route path="registration" element={<Registration />}></Route>
-          <Route path="pay" element={<Pay />}></Route>
-          <Route path="manageproperty" element={<ManageProperty />}></Route>
-          <Route path="manageagents" element={<ManageAgents />}></Route>
-          <Route path="review" element={<GiveReview />}></Route>
           <Route path="*" element={<Notfound />}></Route>
         </Routes>
         <Footer></Footer>
