@@ -7,7 +7,8 @@ const Neighborhoods = () => {
   return (
     <div>
       <Container className="py-5">
-        <h2 className="destination-heading">Featured Neighborhoods</h2>
+        <h1 className="destination-heading">Our Coverage</h1>
+        <hr />
         <Row>
           <div className="col-md-3">
             <figure className="single bg">

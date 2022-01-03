@@ -6,14 +6,16 @@ const About = () => {
   return (
     <div>
       <Container className="">
+      <h1 className="destination-heading pt-5">About Us</h1> <hr />
         <Row>
           <Col>
-            <h1 className="text-center destination-heading py-5">About Us</h1>
+            
             <p>
               <strong>
                 A Tradition of Excellence, Integrity, Knowledge and Service for
                 over 60 years.
               </strong>
+              <br />
               <br />
               At Estey Real Estate, you are number one. Whether you are a
               property owner, tenant, or buyer, we value your business and will
@@ -22,6 +24,7 @@ const About = () => {
               commitment to excellence, a professional attitude, and
               personalized care.
             </p>
+            
           </Col>
           <Col>
             <img
