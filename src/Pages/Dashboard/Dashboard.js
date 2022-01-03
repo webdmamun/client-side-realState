@@ -1,10 +1,11 @@
 import React from "react";
 import { Container } from "react-bootstrap";
+import DashBoardNav from "./DashBoardNav/DashBoardNav";
 
 const Dashboard = () => {
   return (
     <Container>
-      <h2>This is DashBoard</h2>
+      <DashBoardNav />
     </Container>
   );
 };

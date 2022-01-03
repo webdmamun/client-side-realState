@@ -12,6 +12,8 @@ import Dashboard from "./Pages/Dashboard/Dashboard";
 import Header from "./Pages/Shared/Header/Header";
 import AuthProvider from "./Pages/Context/AuthContext";
 import PrivateRoute from "./Pages/Route/PrivetRoute/PrivetRoute";
+import Pay from "./Pages/Dashboard/Pay/Pay";
+import GiveReview from "./Pages/Dashboard/GiveReview/GiveReview";
 
 function App() {
   return (
@@ -34,6 +36,8 @@ function App() {
           <Route path="dashboard" element={<Dashboard />}></Route>
           <Route path="login" element={<Login />}></Route>
           <Route path="registration" element={<Registration />}></Route>
+          <Route path="pay" element={<Pay />}></Route>
+          <Route path="review" element={<GiveReview />}></Route>
           <Route path="*" element={<Notfound />}></Route>
         </Routes>
         <Footer></Footer>
