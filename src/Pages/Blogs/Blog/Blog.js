@@ -3,29 +3,28 @@ import './Blog.css'
 
 const Blog = ({ blog }) => {
     const { img,name,details,author,personImg,comments,day} = blog|| {};
-    console.log(name);
     return (
-          <div className="mt-5">
-          <div class="bg"></div>
-          <div class="card mt-3">    
-            <div class="top">
+          <div className="my-1">
+          <div className="bg"></div>
+          <div className="card mt-3">    
+            <div className="top">
               <img src={img} alt="" />
             </div>
             
-            <div class="bottom">
+            <div className="bottom">
               <h2>{name}</h2>
-              <div class="author">
-                <div class="profile">
+              <div className="author">
+                <div className="profile">
                 <img src={personImg} alt="" />
                 </div>
-                <p class="name">By {author}</p>
+                <p className="name">By {author}</p>
               </div>
-              <p class="intro">{details}</p>
-              <div class="info">
+              <p className="intro">{details}</p>
+              <div className="info">
                 <ion-icon name="time"></ion-icon>
-                <p class="info">{day} days ago</p>
+                <p className="info">{day} days ago</p>
                 <ion-icon name="chatboxes"></ion-icon>
-                <p class="info">{comments} comments</p>
+                <p className="info">{comments} comments</p>
               </div>
             </div>
           </div>
