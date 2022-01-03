@@ -10,7 +10,7 @@ const About = () => {
         <Row>
           <Col>
             
-            <p>
+            <p className="mt-5 ">
               <strong>
                 A Tradition of Excellence, Integrity, Knowledge and Service for
                 over 60 years.

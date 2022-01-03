@@ -23,6 +23,7 @@ const Reviews = () => {
       <Container>
         <h3 className="mb-4 mt-3">User's Reviews</h3>
         <div className="d-flex container justify-content-center user-review">
+          
           {reviews.map((review, i) => (
             <div key={i}>
               <div
@@ -33,6 +34,7 @@ const Reviews = () => {
 
                 <div className="card-body review-text">
                   <h5 className="card-title">
+                    
                     {review.topicName}{" "}
                     <span className="bg-dark text-warning rounded p-2">
                       ★ {review.rating}
