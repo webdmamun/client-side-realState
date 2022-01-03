@@ -1,5 +1,5 @@
 import React from "react";
-import musk from "../../../images/About/musk.jpg";
+import women from "../../../images/About/women.jpg";
 
 const About = () => {
   return (
@@ -13,17 +13,17 @@ const About = () => {
             Estate Services
           </h3>
           <p>
-            With over $2 Billion in sales, Elon Musk is the industry’s top
-            luxury producer with over 27 years of experience in marketing Musk’s
+            With over $2 Billion in sales, Zara is the industry’s top
+            luxury producer with over 7 years of experience in marketing Zara’s
             most prestigious properties. Due to her unparalleled results,
-            expertise and dedication, Musk ranks amongst the Top 6 agents in
+            expertise and dedication, Zara ranks amongst the Top 6 agents in
             Boston.
           </p>
-          <h6>Elon Musk</h6>
+          <h6>Zara Seikh</h6>
           <small>Founder & CEO </small>
         </div>
         <div className="col-12 col-lg-4 col-md-4">
-          <img src={musk} className="img-fluid rounded-circle" style={{width:"450px"}} alt="" />
+          <img src={women} className="img-fluid " alt="" />
         </div>
       </div>
     </div>
