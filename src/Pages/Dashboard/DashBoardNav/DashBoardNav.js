@@ -6,11 +6,6 @@ const DashBoardNav = () => {
     <div style={{ marginTop: "40px" }}>
       <div className="d-flex justify-content-between p-2 rounded ms-5 me-5 bg-dark">
         <div className="d-flex flex-wrap justify-content-center">
-          <Link className="text-white text-decoration-none" to="/myOrders">
-            <h5 className="ms-3 me-5 " style={{ cursor: "pointer" }}>
-              My Orders
-            </h5>
-          </Link>
           <Link className="text-white text-decoration-none" to="/review">
             <h5 className="ms-3 me-5 " style={{ cursor: "pointer" }}>
               Review
@@ -19,6 +14,19 @@ const DashBoardNav = () => {
           <Link className="text-white text-decoration-none" to="/pay">
             <h5 className="ms-3 me-5 " style={{ cursor: "pointer" }}>
               Pay
+            </h5>
+          </Link>
+          <Link
+            className="text-white text-decoration-none"
+            to="/manageproperty"
+          >
+            <h5 className="ms-3 me-5 " style={{ cursor: "pointer" }}>
+              Manage Property
+            </h5>
+          </Link>
+          <Link className="text-white text-decoration-none" to="/manageagents">
+            <h5 className="ms-3 me-5 " style={{ cursor: "pointer" }}>
+              Manage Agents
             </h5>
           </Link>
         </div>
