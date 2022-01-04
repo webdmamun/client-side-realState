@@ -5,6 +5,19 @@ import { useForm } from "react-hook-form";
 const Booking = () => {
   const { register, handleSubmit, reset } = useForm();
   const onSubmit = (data) => {
+    fetch("https://young-anchorage-08482.herokuapp.com/booking", {
+      method: "POST",
+      headers: {
+        "content-type": "application/json",
+      },
+      body: JSON.stringify(data),
+    })
+      .then((res) => res.json())
+      .then((data) => {
+        if (data.insertedId) {
+          alert("Booked Succesfully!");
+        }
+      });
     console.log(data);
     reset();
   };
@@ -16,7 +29,7 @@ const Booking = () => {
           type="text"
           className="form-control"
           placeholder="Your Full Name"
-          {...register("full-name")}
+          {...register("fullName")}
         />
         <input
           type="text"
@@ -36,9 +49,7 @@ const Booking = () => {
           placeholder="Phone Number"
           {...register("phone")}
         />
-        <button type="submit" className=" my-3 btn btn-primary">
-          Pay
-        </button>
+        <input className="my-3" type="submit" />
       </form>
     </Container>
   );
