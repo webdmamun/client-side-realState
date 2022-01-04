@@ -4,7 +4,13 @@ import './Blog.css'
 const Blog = ({ blog }) => {
     const { img,name,details,author,personImg,comments,day} = blog|| {};
     return (
-          <div className="my-1">
+         <>
+         <img
+          className="img-fluid"
+          src="https://i.ibb.co/Jm5fjRN/real.png"
+          alt=""
+        />
+         <div className="my-1">
           <div className="bg"></div>
           <div className="card mt-3">    
             <div className="top">
@@ -29,6 +35,7 @@ const Blog = ({ blog }) => {
             </div>
           </div>
           </div>
+         </>
     );
 };
 
