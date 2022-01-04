@@ -2,31 +2,29 @@ import React, { useEffect, useState } from "react";
 import { Container } from "react-bootstrap";
 import Blog from "./Blog/Blog";
 
-
 const Blogs = () => {
   const [blogs, setBlogs] = useState([]);
   useEffect(() => {
-    fetch("./Blog.JSON")
+    fetch("https://young-anchorage-08482.herokuapp.com/allBlogs")
       .then((res) => res.json())
       .then((json) => setBlogs(json));
   }, []);
   return (
     <>
-    <div>
-    <img
+      <div>
+        <img
           className="img-fluid"
           src="https://i.ibb.co/Jm5fjRN/real.png"
           alt=""
         />
-    </div>
-      
-    <Container>
-          {blogs.map((blog) => (
-            <Blog blog={blog} key={blog.name}></Blog>
-          ))}
-    </Container>
-    </>
+      </div>
 
+      <Container>
+        {blogs.map((blog) => (
+          <Blog blog={blog} key={blog.name}></Blog>
+        ))}
+      </Container>
+    </>
   );
 };
 

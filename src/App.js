@@ -34,7 +34,6 @@ function App() {
             path="blogs"
             element={
               <PrivateRoute>
-                {" "}
                 <Blogs />
               </PrivateRoute>
             }

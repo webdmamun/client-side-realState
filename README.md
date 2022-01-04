@@ -1,16 +1,16 @@
-
 # Urban Estate
 
-
 - This is a full-stack project.
-- 
-- 
-- 
-- 
-- 
-- 
-- 
+-
+-
+-
+-
+-
+-
+-
 
+Admin id: admin@admin.com
+Admin Pass: 654321
 
 ## Authors
 
@@ -19,48 +19,38 @@
 - [Fardin Hasan](https://github.com/fardin-hasan)
 - [MahdiHasanDip](https://www.github.com/MahdiHasanDip)
 
-
-
-  
 ## Technology Used
 
-**Front-end:** 
+**Front-end:**
+
 - React.
 - CSS.
 - React Bootstrap.
 - Bootstrap.
 
-**Authentication** 
+**Authentication**
+
 - Firebase
 
-**Back-end:** 
+**Back-end:**
 
 - Express.js
 - Node.js
 
-**Database:** 
+**Database:**
+
 - MongoDB
 
-
-
-
-
-
-  
 ## Live SIte
 
 - [@Urban Estate]()
 
-  
 ## Deployment
 
 **Hosting**
+
 - Firebase
 
 **Server:**
-- Heroku 
 
-  
-
-
-  
+- Heroku
