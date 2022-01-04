@@ -12,6 +12,11 @@ const Blogs = () => {
   }, []);
   return (
     <Container>
+       <img
+          className="img-fluid"
+          src="https://i.ibb.co/Jm5fjRN/real.png"
+          alt=""
+        />
        <>
           {blogs.map((blog) => (
             <Blog blog={blog} key={blog.name}></Blog>
