@@ -1,14 +1,17 @@
 import React, { useEffect, useState } from "react";
 import Swal from "sweetalert2";
+import UseAuth from "../../Hooks/useAuth";
 
 const MyBooking = () => {
   const [bookings, setBookings] = useState([]);
+  const { user } = UseAuth();
 
   useEffect(() => {
-    fetch("https://young-anchorage-08482.herokuapp.com/myBooking")
+    const url = `https://young-anchorage-08482.herokuapp.com/myBooking?email=${user.email}`;
+    fetch(url)
       .then((res) => res.json())
       .then((data) => setBookings(data));
-  }, [bookings.length]);
+  }, [user.email]);
 
   const handleDelete = (id) => {
     Swal.fire({
@@ -43,8 +46,9 @@ const MyBooking = () => {
           <tr>
             <th scope="col">#</th>
             <th scope="col">Customer Name</th>
+            <th scope="col">Email</th>
             <th scope="col">Location</th>
-            <th scope="col">Price</th>
+            <th scope="col">Phone</th>
             <th scope="col">Action</th>
           </tr>
         </thead>
