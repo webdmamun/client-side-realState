@@ -18,7 +18,6 @@ import AddService from "./Pages/Dashboard/AddServices/AddProperties";
 import DeleteService from "./Pages/Dashboard/DeleteProperties/DeleteProperties";
 import DeleteAgent from "./Pages/Dashboard/DeleteAgent/DeleteAgent";
 import AddAgent from "./Pages/Dashboard/AddAgent/AddAgent";
-import AdminRoute from "./Pages/Route/AminRoute/AdminRoute";
 import PropertyDetails from "./Pages/Properties/PropertyDetails/PropertyDetails";
 import GiveReview from "./Pages/Dashboard/GiveReview/GiveReview";
 import Booking from "./Pages/Booking/Booking";
