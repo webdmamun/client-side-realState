@@ -21,6 +21,7 @@ import AddAgent from "./Pages/Dashboard/AddAgent/AddAgent";
 import AdminRoute from "./Pages/Route/AminRoute/AdminRoute";
 import PropertyDetails from "./Pages/Properties/PropertyDetails/PropertyDetails";
 import GiveReview from "./Pages/Dashboard/GiveReview/GiveReview";
+import Booking from "./Pages/Booking/Booking";
 
 function App() {
   return (
@@ -40,6 +41,7 @@ function App() {
           ></Route>
           <Route path="properties" element={<Properties />}></Route>
           <Route path="details/:_id" element={<PropertyDetails />}></Route>
+          <Route path="booking" element={<Booking />}></Route>
           <Route path="agent" element={<Agent />}></Route>
           <Route path="contact" element={<Contact />}></Route>
 

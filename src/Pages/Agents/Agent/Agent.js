@@ -9,10 +9,10 @@ const Agent = ({ agent }) => {
       <div className="profile-card">
         <div className="text">
           <img className="rounded" src={img} alt="" />
-          <h3>{name}</h3>
+          <h3 style={{ color: "black" }}>{name}</h3>
           <p>Location: {location}</p>
-          <p>Agent Phone: {phone}</p>
-          <p>Agent Email: {mail}</p>
+          <p style={{ color: "black" }}>Agent Phone: {phone}</p>
+          <p style={{ color: "black" }}>Agent Email: {mail}</p>
         </div>
       </div>
     </Col>

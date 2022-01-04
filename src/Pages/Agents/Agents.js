@@ -6,7 +6,7 @@ import Agent from "./Agent/Agent";
 const Agents = () => {
   const [agents, setAgents] = useState([]);
   useEffect(() => {
-    fetch("./agent.JSON")
+    fetch("https://young-anchorage-08482.herokuapp.com/allAgent")
       .then((res) => res.json())
       .then((json) => setAgents(json));
   }, []);
