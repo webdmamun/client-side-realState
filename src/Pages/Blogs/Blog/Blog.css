@@ -1,7 +1,7 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,700');
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,700");
 
 .card {
-/*   height: 500px;
+  /*   height: 500px;
   width: 380px; */
   background-color: white;
   position: relative;
@@ -9,19 +9,17 @@
   color: #555;
 }
 
-.top img{
+.top img {
   height: 50vh;
   width: 100%;
   background-size: cover;
 }
 
-
-h2 {
+.my-1 h2 {
   padding: 22px 22px 0;
- 
 }
 
-p {
+.my-1 p {
   font-size: 18px;
   padding: 0 22px;
   line-height: 24px;
@@ -32,8 +30,8 @@ p {
 }
 
 .author {
- display: flex;
- align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .profile img {
@@ -65,7 +63,9 @@ p {
   padding-left: 0;
 }
 
-.info a { cursor: pointer; }
+.info a {
+  cursor: pointer;
+}
 
 ion-icon {
   height: 20px;

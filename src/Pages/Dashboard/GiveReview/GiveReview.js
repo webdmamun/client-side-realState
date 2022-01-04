@@ -8,9 +8,7 @@ const GiveReview = () => {
   const [rating, setRating] = useState();
   const [comment, setComment] = useState();
 
-  const handleTopicName = (e) => {
-    setTopicName(e.target.value);
-  };
+
 
   const handleRating = (e) => {
     setRating(e.target.value);
@@ -62,16 +60,7 @@ const GiveReview = () => {
                             onChange={handleReviewerName}
                           />
                         </div>
-                        <div className="col-8 from-group pt-2  mx-auto ">
-                          <input
-                            type="text"
-                            className="p-1 from-control input-box"
-                            placeholder="Topic Name"
-                            name=""
-                            required="true"
-                            onChange={handleTopicName}
-                          />
-                        </div>
+                        
                         <div className="col-8 from-group pt-2 mx-auto ">
                           <input
                             type="text"
