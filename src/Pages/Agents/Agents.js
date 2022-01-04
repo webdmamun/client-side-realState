@@ -11,6 +11,8 @@ const Agents = () => {
       .then((json) => setAgents(json));
   }, []);
   return (
+    <>
+    <img className="img-fluid" src="https://i.ibb.co/M1KYtD2/Untitled-design-2.png" alt="" />
     <Container>
       <Row className="py-5">
         <Col>
@@ -26,6 +28,7 @@ const Agents = () => {
         ))}
       </Row>
     </Container>
+    </>
   );
 };
 
