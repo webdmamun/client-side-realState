@@ -5,7 +5,7 @@ import useFirebase from "../../Hooks/useFirebase";
 import "./Dashboard.css";
 
 const Dashboard = () => {
-  const { user, logOut } = useFirebase();
+  const { user, logOut,admin} = useFirebase();
   return (
     <div className="text-center">
       <Row>
@@ -18,8 +18,13 @@ const Dashboard = () => {
                   <span className="text"> Home </span>{" "}
                 </Link>
               </li>
-              <hr />
-              <li>
+              
+ 
+              {
+                admin &&
+                <>
+                <hr />
+                <li>
                 <Link style={{ textDecoration: "none" }} to="/dashboard/admin">
                   {" "}
                   <span className="text"> Make Admin </span>
@@ -60,6 +65,9 @@ const Dashboard = () => {
                   <span className="text"> Delete Agents </span>{" "}
                 </Link>
               </li>
+                </>
+              }
+
               <hr />
               <li>
                 <Link
