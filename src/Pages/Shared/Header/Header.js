@@ -33,7 +33,7 @@ const Header = () => {
             </Nav.Link>
           </Nav>
           <Nav>
-            {admin&&<Nav.Link as={Link} to="/dashboard">
+            {user.email  &&<Nav.Link as={Link} to="/dashboard">
               Dashboard
             </Nav.Link>}
           {user.email?
