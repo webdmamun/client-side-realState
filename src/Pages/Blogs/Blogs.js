@@ -11,13 +11,22 @@ const Blogs = () => {
       .then((json) => setBlogs(json));
   }, []);
   return (
+    <>
+    <div>
+    <img
+          className="img-fluid"
+          src="https://i.ibb.co/Jm5fjRN/real.png"
+          alt=""
+        />
+    </div>
+      
     <Container>
-       <>
           {blogs.map((blog) => (
             <Blog blog={blog} key={blog.name}></Blog>
           ))}
-        </>
     </Container>
+    </>
+
   );
 };
 
