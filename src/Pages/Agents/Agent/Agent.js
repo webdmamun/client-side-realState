@@ -5,8 +5,8 @@ import "./Agent.css";
 const Agent = ({ agent }) => {
   const { img, name, location, phone, mail } = agent;
   return (
-    <Col xs={6} md={4} >
-      <div className="profile-card ">
+    <Col xs={6} md={4}>
+      <div className="card profile-card">
         <div className="text-center">
           <img className="mb-3 rounded" src={img} alt="" />
           <h3 style={{ color: "black" }}>{name}</h3> <hr />
@@ -19,7 +19,6 @@ const Agent = ({ agent }) => {
         </div>
       </div>
     </Col>
-
   );
 };
 
