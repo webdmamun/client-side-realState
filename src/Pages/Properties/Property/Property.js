@@ -54,7 +54,7 @@ const Property = ({ property }) => {
           <div className="card-read-more">
             <button
               onClick={() => handleDetailsButton(_id)}
-              className="btn btn-link btn-block text-decoration-none"
+              className="detail-btn"
             >
               Details
             </button>

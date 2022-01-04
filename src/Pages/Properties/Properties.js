@@ -11,40 +11,36 @@ const Properties = () => {
       .then((json) => setProperties(json));
   }, []);
   return (
+    <>
+    <img className="img-fluid" src="https://i.ibb.co/GFS9h6w/Untitled-design-1.png" alt="" />
+    
+    
+ 
     <div className="full-cart-area">
       <Container>
         {/* cart area header */}
 
-        <Row className="cart-heading">
-          <Col>
-            <h2 className="cart-heading-title">
-              Find The Right <br />
+        
+           
+            <h2 className="cart-heading-title m-5 text-center">
+              Find The Right 
               Property For You
             </h2>
-            <p>
-              You don't have to struggle, you've got our assistance and help.
-            </p>
-          </Col>
-          <Col className="search-box">
-            <InputGroup className="mb-3">
-              <FormControl
-                placeholder="Search the location you want"
-                aria-label="Search the location you want"
-                aria-describedby="basic-addon2"
-              />
-              <button className="btn btn-secondary">Search</button>
-            </InputGroup>
-          </Col>
-        </Row>
+             <hr />
+             <br />
+          
+         
+      
 
         {/* Load course data  */}
-        <div className="row">
+        <div className="row mb-5">
           {properties.map((property) => (
             <Property key={property.id} property={property}></Property>
           ))}
         </div>
       </Container>
     </div>
+    </>
   );
 };
 
