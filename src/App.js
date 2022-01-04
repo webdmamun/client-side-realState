@@ -22,6 +22,7 @@ import AdminRoute from "./Pages/Route/AminRoute/AdminRoute";
 import PropertyDetails from "./Pages/Properties/PropertyDetails/PropertyDetails";
 import GiveReview from "./Pages/Dashboard/GiveReview/GiveReview";
 import Booking from "./Pages/Booking/Booking";
+import MyBooking from "./Pages/Dashboard/MyBooking/MyBooking";
 
 function App() {
   return (
@@ -59,6 +60,7 @@ function App() {
             <Route path="/dashboard/addAgent" element={<AddAgent />} />
             <Route path="/dashboard/delete" element={<DeleteService />} />
             <Route path="/dashboard/deleteAgent" element={<DeleteAgent />} />
+            <Route path="/dashboard/mybooking" element={<MyBooking />} />
             <Route path="/dashboard/givereview" element={<GiveReview />} />
           </Route>
           <Route path="login" element={<Login />}></Route>
