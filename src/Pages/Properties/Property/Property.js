@@ -25,7 +25,7 @@ const Property = ({ property }) => {
             <div className="d-flex justify-content-between lesson">
               <div>
                 <p>
-                  <i class="fas fa-map-marker-alt"></i> {location}
+                  <i className="fas fa-map-marker-alt"></i> {location}
                 </p>
               </div>
               <div></div>
@@ -38,12 +38,12 @@ const Property = ({ property }) => {
             <div className="d-flex justify-content-between lesson">
               <div>
                 <p>
-                  <i class="fas fa-home"></i> {space}
+                  <i className="fas fa-home"></i> {space}
                 </p>
               </div>
               <div>
                 <p>
-                  <i class="fas fa-bed"></i> {bed}
+                  <i className="fas fa-bed"></i> {bed}
                 </p>
               </div>
             </div>
