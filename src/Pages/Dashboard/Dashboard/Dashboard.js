@@ -64,6 +64,16 @@ const Dashboard = () => {
               <li>
                 <Link
                   style={{ textDecoration: "none" }}
+                  to="/dashboard/mybooking"
+                >
+                  {" "}
+                  <span className="text"> My Booking </span>{" "}
+                </Link>
+              </li>
+              <hr />
+              <li>
+                <Link
+                  style={{ textDecoration: "none" }}
                   to="/dashboard/givereview"
                 >
                   {" "}
