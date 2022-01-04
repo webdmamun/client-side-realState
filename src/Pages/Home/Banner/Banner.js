@@ -12,7 +12,9 @@ const Banner = () => {
             src="https://i.ibb.co/mqPrGZ3/4.png"
             alt="First slide"
           />
-          <figcaption>Urban Estate</figcaption>
+          <figcaption>
+            Don’t wait to buy real estate. Buy real estate and wait.
+          </figcaption>
         </figure>
         <Carousel.Caption>
           {/* <h3>First slide label</h3>
@@ -26,7 +28,10 @@ const Banner = () => {
             src="https://i.ibb.co/ygKBdY0/1.png"
             alt="Second slide"
           />
-          <figcaption>Urban Estate</figcaption>
+          <figcaption>
+            I still think buying a home is the best investment any individual
+            can make.” - John Paulson
+          </figcaption>
         </figure>
         <Carousel.Caption>
           {/* <h3>Second slide label</h3>
@@ -40,7 +45,10 @@ const Banner = () => {
             src="https://i.ibb.co/bHt5dFj/3.png"
             alt="Third slide"
           />
-          <figcaption>Urban Estate</figcaption>
+          <figcaption>
+            If you’re not going to put money in real estate, where else?” -
+            Tamir Sapir
+          </figcaption>
         </figure>
         <Carousel.Caption>
           {/* <h3>BEST PLACE FOR Buy Property!</h3>

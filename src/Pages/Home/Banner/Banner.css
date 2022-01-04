@@ -26,7 +26,7 @@ figure.banner-effect {
   box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
 }
 figure.banner-effect figcaption {
-  /* font-family: "Slabo 50px", serif; */
+  display: none;
   font-size: 50px;
   position: absolute;
   padding: 15px;
@@ -38,7 +38,7 @@ figure.banner-effect figcaption {
   transition: all 0.35s ease-in-out;
 }
 figure.banner-effect:before {
-  background: rgba(9, 27, 39, 0.5);
+  /* background: rgba(9, 27, 39, 0.5); */
   width: 100%;
   height: 100%;
   position: absolute;
@@ -48,18 +48,28 @@ figure.banner-effect:before {
   transition: all 0.35s ease-in-out;
 }
 figure.banner-effect:hover:before {
-  background: rgba(0, 133, 40, 0.1);
+  /* background: rgba(0, 133, 40, 0.1); */
+  background: rgba(9, 27, 39, 0.5);
   -webkit-transition: all 0.35s ease-in-out;
   transition: all 0.35s ease-in-out;
 }
 figure.banner-effect:hover figcaption {
-  color: rgb(13, 112, 0);
-  font-size: 100px;
+  display: block;
+  color: rgb(255, 255, 255);
+  font-size: 3vw;
+  position: absolute;
+  padding: 15px;
+  top: 40%;
+  left: 0;
+  width: 100%;
+  -webkit-transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
+  /* font-size: 100px;
   -webkit-clip-path: polygon(100% 0, 100% 90%, 0 100%, 0 10%);
   clip-path: polygon(100% 0, 100% 90%, 0 100%, 0 10%);
   position: absolute;
   top: 65%;
   left: 0;
   -webkit-transition: all 0.35s ease-in-out;
-  transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out; */
 }
