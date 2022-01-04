@@ -5,7 +5,8 @@ import { useForm } from "react-hook-form";
 const Booking = () => {
   const { register, handleSubmit, reset } = useForm();
   const onSubmit = (data) => {
-    fetch("https://young-anchorage-08482.herokuapp.com/booking", {
+    
+    fetch("https://young-anchorage-08482.herokuapp.com/mybooking", {
       method: "POST",
       headers: {
         "content-type": "application/json",
@@ -15,7 +16,7 @@ const Booking = () => {
       .then((res) => res.json())
       .then((data) => {
         if (data.insertedId) {
-          alert("Booked Succesfully!");
+          alert("Booked Successfully!");
         }
       });
     console.log(data);
