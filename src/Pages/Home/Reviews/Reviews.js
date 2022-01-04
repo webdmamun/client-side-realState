@@ -39,28 +39,8 @@ const Reviews = () => {
                       ★ {review.rating}
                     </span>
                   </h5>
-                  {review.rating <= 0 ? (
-                    <div className="text-warning fs-3">☆☆☆☆☆</div>
-                  ) : review.rating > 0 && review.rating <= 1 ? (
-                    <div className="text-warning fs-3">★☆☆☆☆</div>
-                  ) : review.rating > 1 && review.rating <= 1.5 ? (
-                    <div className="text-warning fs-3">★⯪☆☆☆</div>
-                  ) : review.rating > 1.5 && review.rating <= 2 ? (
-                    <div className="text-warning fs-3">★★☆☆☆</div>
-                  ) : review.rating > 2 && review.rating <= 2.5 ? (
-                    <div className="text-warning fs-3">★★⯪☆☆</div>
-                  ) : review.rating > 2.5 && review.rating <= 3 ? (
-                    <div className="text-warning fs-3">★★★☆☆</div>
-                  ) : review.rating > 3 && review.rating <= 3.5 ? (
-                    <div className="text-warning fs-3">★★★⯪☆</div>
-                  ) : review.rating > 3.5 && review.rating <= 4 ? (
-                    <div className="text-warning fs-3">★★★★☆</div>
-                  ) : review.rating > 4 && review.rating <= 4.5 ? (
-                    <div className="text-warning fs-3">★★★⯪☆</div>
-                  ) : (
-                    <div className="text-warning fs-3">★★★★★</div>
-                  )}
-                  <p className="card-text">{review.comment}</p>
+
+                  <p className="card-text mt-3">{review.comment}</p>
                 </div>
               </div>
             </div>
