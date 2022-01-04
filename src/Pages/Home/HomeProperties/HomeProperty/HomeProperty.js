@@ -1,5 +1,6 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
+import "./HomeProperty.css"
 
 const HomeProperty = ({ property }) => {
   const { img, name, price, location, bed, space, _id } = property || {};
@@ -14,8 +15,8 @@ const HomeProperty = ({ property }) => {
     <>
       {/* single cart  */}
 
-      <div className="col-xs-12 col-sm-4 col-md-4">
-        <div className="card">
+      <div className="col-xs-12 col-sm-4 col-md-4 ">
+        <div className="card property-card">
           <img className="img-card" src={img} alt="" />
 
           <div className="card-content">
@@ -23,7 +24,7 @@ const HomeProperty = ({ property }) => {
               <div>
                 <p>
                   <i className="fas fa-map-marker-alt"></i> {location}
-                </p>
+                </p> 
               </div>
               <div></div>
             </div>
@@ -51,12 +52,14 @@ const HomeProperty = ({ property }) => {
           <div className="card-read-more">
             <button
               onClick={() => handleDetailsButton(_id)}
-              className="btn btn-link btn-block text-decoration-none"
+              className="detail-btn"
             >
               Details
             </button>
-          </div>
+           </div>
+           
         </div>
+        
       </div>
     </>
   );

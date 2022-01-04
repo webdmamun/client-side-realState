@@ -58,6 +58,7 @@
   transition: all 0.25s ease;
 }
 .card-content {
+  height: 200px;
   padding: 15px;
   text-align: left;
 }

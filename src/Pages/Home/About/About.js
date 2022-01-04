@@ -9,6 +9,14 @@ const About = () => {
       <h1 className="destination-heading pt-5">About Us</h1> <hr />
         <Row>
           <Col>
+            <img
+              className="rounded mt-5"
+              src="https://i.ibb.co/r4TnBhy/Untitled-design.png"
+              
+              alt=""
+            />
+          </Col>
+          <Col>
             
             <p className="mt-5 ">
               <strong>
@@ -25,14 +33,6 @@ const About = () => {
               personalized care.
             </p>
             
-          </Col>
-          <Col>
-            <img
-              className="rounded mt-5"
-              src="https://pediaa.com/wp-content/uploads/2020/08/Difference-Between-Property-and-Real-Estate_1-1024x660.jpg"
-              width="500px"
-              alt=""
-            />
           </Col>
         </Row>
       </Container>
