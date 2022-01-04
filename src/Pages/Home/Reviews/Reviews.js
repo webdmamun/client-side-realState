@@ -16,7 +16,7 @@ const Reviews = () => {
     <div className="container">
       <h3 className="mb-4 mt-3">User's Reviews</h3> <hr />
       <Container>
-        <Row>
+        <Row >
           {reviews.map((review) => (
             <Col sm={12} lg={4} md={6} className="review-card text-center">
               <p>{review.reviewerName}</p>
