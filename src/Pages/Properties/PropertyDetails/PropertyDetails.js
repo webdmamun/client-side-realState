@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Link, useParams } from "react-router-dom";
 import { Container } from "react-bootstrap";
+import "./PropertyDetails.css";
 
 const PropertyDetails = () => {
   const { _id } = useParams();
@@ -13,15 +14,27 @@ const PropertyDetails = () => {
   return (
     <>
       <Container>
-        <div className="profile-card my-3">
+        <div className="property-details-card my-3">
           <div className="text">
             <img className="rounded" src={details.img} alt="" />
-            <h3 style={{ color: "black" }}>{details.name}</h3>
-            <p>Price: {details.price}</p>
-            <p style={{ color: "black" }}>Location: {details.location}</p>
-            <p style={{ color: "black" }}>Description: {details.des}</p>
+            <h3 className="fw-bold mt-2" style={{ color: "black" }}>
+              {details.name}
+            </h3>
+            <p className="text-primary">
+              <span className="fw-bold">Price: </span> {details.price}
+            </p>
+            <p style={{ color: "black" }}>
+              <span className="fw-bold">Location: </span> {details.location}
+            </p>
+            <p style={{ color: "black" }}>
+              <span className="fw-bold">Description: </span>
+              {details.des}
+            </p>
             <p style={{ color: "black" }}>{details.bed} Beds are avilable.</p>
-            <p style={{ color: "black" }}>Space: {details.space}</p>
+            <p style={{ color: "black" }}>
+              <span className="fw-bold">Space: </span>
+              {details.space}
+            </p>
             <button className="btn btn-primary">
               <Link className="text-decoration-none text-white" to="/booking">
                 Book Now
