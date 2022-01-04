@@ -41,7 +41,7 @@ const GiveReview = () => {
         <div className="">
           <h2 className="text-center">Review our service</h2>
           <hr />
-          <div className="email-from">
+          <div className="">
             <form onSubmit={handleReview}>
               <div className="row pt-5 mx-auto">
                 <div className="col-8 from-group mx-auto">
