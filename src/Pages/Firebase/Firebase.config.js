@@ -1,9 +1,8 @@
 const firebaseConfig = {
-  apiKey: "AIzaSyCGm9u7IbW1WRl64NUAPmfvT43ExSaZbGU",
-  authDomain: "urban-estate-69bca.firebaseapp.com",
-  projectId: "urban-estate-69bca",
-  storageBucket: "urban-estate-69bca.appspot.com",
-  messagingSenderId: "287774668074",
-  appId: "1:287774668074:web:6d604a4e92da59003f9a53"
+  apiKey: "AIzaSyB3C5fiejnHdUjF3Ac1r5KeG5cTOZ96Ef8",
+  authDomain: "urbanestate-5ad54.firebaseapp.com",
+  projectId: "urbanestate-5ad54",
+  storageBucket: "urbanestate-5ad54.appspot.com",
+  messagingSenderId: "362254143181",
+  appId: "1:362254143181:web:8eee21c5e1ddddb2432384",
 };
-export default firebaseConfig;
