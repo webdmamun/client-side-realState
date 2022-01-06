@@ -5,7 +5,7 @@ import useFirebase from "../../Hooks/useFirebase";
 import "./Dashboard.css";
 
 const Dashboard = () => {
-  const { user, logOut,admin} = useFirebase();
+  const { user, logOut, admin } = useFirebase();
   return (
     <div className="text-center">
       <Row>
@@ -14,60 +14,58 @@ const Dashboard = () => {
             <ul className="mt-3">
               <li>
                 <Link style={{ textDecoration: "none" }} to="/dashboard">
-                  {" "}
                   <span className="text"> Home </span>{" "}
                 </Link>
               </li>
-              
- 
-              {
-                admin &&
+              {admin && (
                 <>
-                <hr />
-                <li>
-                <Link style={{ textDecoration: "none" }} to="/dashboard/admin">
-                  {" "}
-                  <span className="text"> Make Admin </span>
-                </Link>
-              </li>
-              <hr />
-              <li>
-                <Link
-                  style={{ textDecoration: "none" }}
-                  to="/dashboard/addProperties"
-                >
-                  <span className="text"> Add Properties</span>
-                </Link>
-              </li>
-              <hr />
-              <li>
-                <Link
-                  style={{ textDecoration: "none" }}
-                  to="/dashboard/addAgent"
-                >
-                  <span className="text"> Add Agents</span>
-                </Link>
-              </li>
-              <hr />
-              <li>
-                <Link style={{ textDecoration: "none" }} to="/dashboard/delete">
-                  {" "}
-                  <span className="text"> Delete Properties </span>{" "}
-                </Link>
-              </li>{" "}
-              <hr />
-              <li>
-                <Link
-                  style={{ textDecoration: "none" }}
-                  to="/dashboard/deleteAgent"
-                >
-                  {" "}
-                  <span className="text"> Delete Agents </span>{" "}
-                </Link>
-              </li>
+                  <hr />
+                  <li>
+                    <Link
+                      style={{ textDecoration: "none" }}
+                      to="/dashboard/admin"
+                    >
+                      <span className="text"> Make Admin </span>
+                    </Link>
+                  </li>
+                  <hr />
+                  <li>
+                    <Link
+                      style={{ textDecoration: "none" }}
+                      to="/dashboard/addProperties"
+                    >
+                      <span className="text"> Add Properties</span>
+                    </Link>
+                  </li>
+                  <hr />
+                  <li>
+                    <Link
+                      style={{ textDecoration: "none" }}
+                      to="/dashboard/addAgent"
+                    >
+                      <span className="text"> Add Agents</span>
+                    </Link>
+                  </li>
+                  <hr />
+                  <li>
+                    <Link
+                      style={{ textDecoration: "none" }}
+                      to="/dashboard/delete"
+                    >
+                      <span className="text"> Delete Properties </span>
+                    </Link>
+                  </li>
+                  <hr />
+                  <li>
+                    <Link
+                      style={{ textDecoration: "none" }}
+                      to="/dashboard/deleteAgent"
+                    >
+                      <span className="text"> Delete Agents </span>
+                    </Link>
+                  </li>
                 </>
-              }
-
+              )}
               <hr />
               <li>
                 <Link

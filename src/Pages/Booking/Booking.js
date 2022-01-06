@@ -5,7 +5,6 @@ import { useForm } from "react-hook-form";
 const Booking = () => {
   const { register, handleSubmit, reset } = useForm();
   const onSubmit = (data) => {
-    
     fetch("https://young-anchorage-08482.herokuapp.com/mybooking", {
       method: "POST",
       headers: {

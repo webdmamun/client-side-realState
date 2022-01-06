@@ -28,7 +28,7 @@ const Reviews = () => {
             <div className="col-sm-6 col-md-4 col-lg-3" key={i}>
               <div
                 className="card text-dangerdark mb-2 ms-3 review-bg"
-                style={{ width: "18rem", height: "200px" }}
+                style={{ width: "100%", height: "200px" }}
               >
                 <div className="card-header">{review.reviewerName}</div>
 

@@ -5,7 +5,7 @@ import "./Agent.css";
 const Agent = ({ agent }) => {
   const { img, name, location, phone, mail } = agent;
   return (
-    <Col xs={6} md={4}>
+    <Col md={6} lg={3}>
       <div className="card profile-card">
         <div className="text-center">
           <img className="mb-3 rounded" src={img} alt="" />
