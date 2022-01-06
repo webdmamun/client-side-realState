@@ -17,7 +17,7 @@ const Property = ({ property }) => {
     <>
       {/* single cart  */}
 
-      <div className="col-xs-12 col-sm-4 col-md-4">
+      <div className="col-sm-6 col-md-4 col-lg-3">
         <div className="card">
           <img className="img-card" src={img} alt="" />
 
@@ -54,7 +54,7 @@ const Property = ({ property }) => {
           <div className="card-read-more">
             <button
               onClick={() => handleDetailsButton(_id)}
-              className="detail-btn"
+              className="detail-btn my-3"
             >
               Details
             </button>

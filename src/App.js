@@ -30,29 +30,13 @@ function App() {
         <Header />
         <Routes>
           <Route path="/" element={<Home />}></Route>
-          <Route
-            path="blogs"
-            element={
-              <PrivateRoute>
-                <Blogs />{" "}
-              </PrivateRoute>
-            }
-          ></Route>
-          <Route
-            path="properties"
-            element={
-              <PrivateRoute>
-                {" "}
-                <Properties />
-              </PrivateRoute>
-            }
-          ></Route>
+          <Route path="blogs" element={<Blogs />}></Route>
+          <Route path="properties" element={<Properties />}></Route>
 
           <Route
             path="details/:_id"
             element={
               <PrivateRoute>
-                {" "}
                 <PropertyDetails />
               </PrivateRoute>
             }

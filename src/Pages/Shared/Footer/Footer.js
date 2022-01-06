@@ -1,6 +1,5 @@
 import React from "react";
 import "./Footer.css";
-import { Col, Container, Row } from "react-bootstrap";
 import { Link } from "react-router-dom";
 
 const Footer = () => {
@@ -29,25 +28,6 @@ const Footer = () => {
                 <li>Support Center</li>
                 <li>Terms Conditions</li>
               </ul>
-            </div>
-
-            <div className="col-lg-3 col-12">
-              <h4>Urban State</h4> <hr />
-              <h6>
-                <i className="fas fa-map-marker-alt footer-icon"></i> 25 Union
-                St, Boston, MA 02113
-              </h6>
-              <h6>
-                <i className="fas fa-phone-volume footer-icon"></i> Office (305)
-                352-4765
-              </h6>
-              <h6>
-                <i className="fas fa-fax footer-icon"></i> Fax (305) 361-6577
-              </h6>
-              <h6>
-                <i className="fas fa-envelope footer-icon"></i>{" "}
-                office@mysite.com
-              </h6>
             </div>
 
             <div className="col-lg-3 col-12">
@@ -110,7 +90,24 @@ const Footer = () => {
               </ul>
             </div>
 
-            
+            <div className="col-lg-3 col-12">
+              <h4>Urban State</h4> <hr />
+              <h6>
+                <i className="fas fa-map-marker-alt footer-icon"></i> 25 Union
+                St, Boston, MA 02113
+              </h6>
+              <h6>
+                <i className="fas fa-phone-volume footer-icon"></i> Office (305)
+                352-4765
+              </h6>
+              <h6>
+                <i className="fas fa-fax footer-icon"></i> Fax (305) 361-6577
+              </h6>
+              <h6>
+                <i className="fas fa-envelope footer-icon"></i>{" "}
+                office@mysite.com
+              </h6>
+            </div>
           </div>
         </div>
         <div className="d-flex justify-content-center py-3">
@@ -135,4 +132,3 @@ const Footer = () => {
 };
 
 export default Footer;
-

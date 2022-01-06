@@ -10,7 +10,7 @@ const Neighborhoods = () => {
         <h1 className="destination-heading">Our Coverage</h1>
         <hr />
         <Row>
-          <div className="col-md-3">
+          <div className="col-sm-6 col-md-4 col-lg-3">
             <figure className="single bg">
               <img
                 className="img-fluid"
@@ -20,7 +20,7 @@ const Neighborhoods = () => {
               <figcaption>CALIFORNIA</figcaption>
             </figure>
           </div>
-          <div className="col-md-3">
+          <div className="col-sm-6 col-md-4 col-lg-3">
             <figure className="single bg">
               <img
                 className="img-fluid"
@@ -30,7 +30,7 @@ const Neighborhoods = () => {
               <figcaption>LOS ANGELES</figcaption>
             </figure>
           </div>
-          <div className="col-md-3">
+          <div className="col-sm-6 col-md-4 col-lg-3">
             <figure className="single bg">
               <img
                 className="img-fluid"
@@ -40,7 +40,7 @@ const Neighborhoods = () => {
               <figcaption>MIAMI</figcaption>
             </figure>
           </div>
-          <div className="col-md-3">
+          <div className="col-sm-6 col-md-4 col-lg-3">
             <figure className="single bg">
               <img
                 className="img-fluid"
@@ -50,7 +50,7 @@ const Neighborhoods = () => {
               <figcaption>NEW JERSEY</figcaption>
             </figure>
           </div>
-          <div className="col-md-3">
+          <div className="col-sm-6 col-md-4 col-lg-3">
             <figure className="single bg">
               <img
                 className="img-fluid"
@@ -60,7 +60,7 @@ const Neighborhoods = () => {
               <figcaption>SAN FRANCISCO</figcaption>
             </figure>
           </div>
-          <div className="col-md-3">
+          <div className="col-sm-6 col-md-4 col-lg-3">
             <figure className="single bg">
               <img
                 className="img-fluid"
@@ -70,7 +70,7 @@ const Neighborhoods = () => {
               <figcaption>NEW YORK</figcaption>
             </figure>
           </div>
-          <div className="col-md-3">
+          <div className="col-sm-6 col-md-4 col-lg-3">
             <figure className="single bg">
               <img
                 className="img-fluid"
@@ -80,7 +80,7 @@ const Neighborhoods = () => {
               <figcaption>NEVADA</figcaption>
             </figure>
           </div>
-          <div className="col-md-3">
+          <div className="col-sm-6 col-md-4 col-lg-3">
             <figure className="single bg">
               <img
                 className="img-fluid"

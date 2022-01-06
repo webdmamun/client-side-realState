@@ -29,7 +29,7 @@ const Properties = () => {
           <br />
 
           {/* Load course data  */}
-          <div className="row mb-5">
+          <div className="row g-3 mb-5">
             {properties.map((property) => (
               <Property key={property.id} property={property}></Property>
             ))}
