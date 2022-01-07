@@ -1,13 +1,11 @@
 # Urban Estate
 
-- This is a full-stack project.
--
--
--
--
--
--
--
+- This is a Real Estate Management application including an admin panel and user dashboard. 
+- Used React, React Router building UI and Node and Express JS for building server side.
+- A normal user can book a property and manage booking from user dashboard. 
+- An admin can manage, add, and delete a property, agent and booking.
+- Used firebase for authentication, after login user.
+- All website data APIs call from Mongo dB
 
 Admin id: admin@admin.com
 Admin Pass: 654321
@@ -43,7 +41,7 @@ Admin Pass: 654321
 
 ## Live SIte
 
-- [@Urban Estate]()
+- [Urban Estate](https://urbanestate-5ad54.web.app/)
 
 ## Deployment
 
