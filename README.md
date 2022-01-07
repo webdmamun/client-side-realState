@@ -12,9 +12,9 @@ Admin Pass: 654321
 
 ## Authors
 
-- [AFreul Joy](https://github.com/afreul-joy)
 - [Mamun ahmed](https://github.com/webdmamun)
 - [Fardin Hasan](https://github.com/fardin-hasan)
+- [AFreul Joy](https://github.com/afreul-joy)
 - [MahdiHasanDip](https://www.github.com/MahdiHasanDip)
 
 ## Technology Used
